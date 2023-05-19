@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hand Gesture Recognition System</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="shortcut icon" href="./images/Travelerz-logo.png" type="img/x-icon">
+
+    </head>
+    <body>
+
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo">Hand Gesture Predictor</a>
+
+            <div class="icons">
+                <input type="text" name="" placeholder="Search">
+                <button><i class="fas fa-search" id="search-btn"></i></button>
+            </div>
+
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#packages">Informations</a>
+                <a href="#book">Techniques</a>
+                <a href="#gallery">Gestures</a>
+                <a href="#services"> Future Scope </a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+            
+        </header>
+
+
+        <div class="login-form-container">
+
+            <i class="fas fa-times" id="form-close"></i>
+
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="enter your email">
+                <input type="password" class="box" placeholder="enter your password">
+                <input type="submit" value="login now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+                <p>forget password? <a href="#">click here</a></p>
+                <p>don't have and account? <a href="#">register now</a></p>
+            </form>
+
+        </div>
+
+        <section class="home" id="home">
+
+            <div class="content">
+                <h3 style="position: relative; color: #115d90; font-size: 700%;">The Hand Gesture Recognition System</h3>
+                <p style="color: aliceblue;">Gesture recognition is an active research field in Human-Computer Interaction technology. It has many applications in virtual environment control and sign language translation, robot control, or music creation. In this machine learning project on Hand Gesture Recognition, we are going to make a real-time Hand Gesture Recognizer using the MediaPipe framework and Tensorflow in OpenCV and Python.</p>
+                <a href="https://www.mdpi.com/2076-3417/11/9/4164" class="btn">Discover</a>
+            </div>
+
+            <div class="controls">
+               
+                <span class="vid-btn active" data-src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/vid-1.mp4"></span>
+                <span class="vid-btn" data-src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/vid-2.mp4"></span>
+                <span class="vid-btn" data-src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/vid-3.mp4"></span>
+                <span class="vid-btn" data-src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/vid-4.mp4"></span>
+                <span class="vid-btn" data-src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/vid-5.mp4"></span>
+            </div>
+
+            <div class="video-container">
+                <video src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+                <video src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/vid-2.mp4" id="video-slider" loop autoplay muted></video>
+                <video src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/vid-4.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+
+        </section>
+        
+        <section class="packages" id="packages" style="background-color: #fff">
+
+            <h1 class="heading">
+                <span style="color: brown; position: relative; text-decoration: underline; ">Libraries used in the Project for Real time working</span>
+            </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/15813maxresdefault.jpeg" alt="" class="imggg">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> What is Tensorflow? </h3>
+                        <p>TensorFlow is an open-source library for machine learning and deep learning developed by the Google brains team. It can be used across a range of tasks but has a particular focus on deep neural networks.</p>
+                        <a href="https://www.tensorflow.org/learn" class="btn">Click for for details about Tensorflow:-</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/1_HfZmZayUqnYioPC9qTfd4A.jpeg" alt="" class="imgggg">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> Open-CV </h3>
+                        <p>OpenCV is a Python library that allows you to perform image processing and computer vision tasks. It provides a wide range of features, including object detection, face recognition, and tracking.</p>
+                        <a href="https://www.mygreatlearning.com/blog/opencv-tutorial-in-python/#:~:text=OpenCV%20is%20a%20Python%20library,%2C%20face%20recognition%2C%20and%20tracking." class="btn">Click for for details about Open-CV:-</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/11.jpeg" alt="Van Gogh, Self-portrait." class="img">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> MediaPipe library </h3>
+                        <p>MediaPipe offers ready-to-use yet customizable Python solutions as a prebuilt Python package. MediaPipe Python package is available on PyPI for Linux, macOS and Windows.</p>
+                            <p><b>for instance, activate a Python virtual environment:</p>                           
+                            <p>$ python3 -m venv mp_env && source mp_env/bin/activate</p>
+
+                        <a href="https://omdena.com/blog/mediapipe-python-tutorial/" class="btn">Click for for more details about mediapipe:</a>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <img src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/what-is-deep-learning.jpeg" alt="" class="imgg">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> Deep Learning </h3>
+                        <p> Deep learning is a subset of machine learning, which is essentially a neural network with three or more layers. These neural networks attempt to simulate the behavior of the human brain—albeit far from matching its ability—allowing it to “learn” from large amounts of data.</p>
+                        <div style = "text-align: center">
+                        <a href="https://www.ibm.com/topics/deep-learning#:~:text=the%20next%20step-,What%20is%20deep%20learning%3F,from%20large%20amounts%20of%20data." class="btn"><blink>Check out brief information of Deep Learning:</blink></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="packages" id="packages">
+
+            <h1 class="heading">
+                <span style="color: brown; position: relative; text-decoration: underline;"><u>Techniques using in the Project:- </u></span>
+
+            </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/CNN-Architecture.jpeg" alt="" class="imag">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> CNN- Convolution Neural network </h3>
+                        <p>A convolutional neural network (CNN or convnet) is a subset of machine learning. It is one of the various types of artificial neural networks which are used for different applications and data types. A CNN is a kind of network architecture for deep learning algorithms and is specifically used for image recognition and tasks that involve the processing of pixel data.</p>
+                        <a href="https://www.analyticsvidhya.com/blog/2021/05/convolutional-neural-networks-cnn/" class="btn">Click for for details:-</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/resnet50.jpeg" alt="" class="iag">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> ResNet-50 architecture </h3>
+                        <p>ResNet-50 is a 50-layer convolutional neural network (48 convolutional layers, one MaxPool layer, and one average pool layer). Residual neural networks are a type of artificial neural network (ANN) that forms networks by stacking residual blocks.</p>
+                        <a href="https://datagen.tech/guides/computer-vision/resnet-50/" class="btn">Click for for details:-</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/mobilenet-v2.jpeg" alt="" class="aaa">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> MobileNet-V2 </h3>
+                        <p>MobileNet-v2 is a convolutional neural network that is 53 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database. The pretrained network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals.</p>
+                        <a href="https://iq.opengenus.org/mobilenetv2-architecture/" class="btn">Click for for details:-</a>
+                    </div>
+                </div>
+
+                <div class="separate">
+                    <img src="images/book-img.jpg" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="packages" id="packages">
+
+            <h1 class="heading">
+                <span style="color: brown; position: relative; text-decoration: underline; "><u> Download Hand Gesture Recognition Project Code </u></span>
+
+            </h1>
+
+            <div class="box-container">
+
+                <div class="box2">
+                    <div class="content">
+                        <p> Please download the source code of Hand Gesture Recognition Project:
+                            <a href="https://drive.google.com/file/d/1DhcFDMXnFdnb8fFroFtuXC_2OvY0wopD/view?usp=sharing"><strong>Hand Gesture Recognition Project code</strong></a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section class="gallery" id="gallery" >
+
+            <h1 class="heading">
+                <span style="color: brown; position: relative; text-decoration: underline;"> Gesture Demonstration </span>
+            </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="images/g-1.jpg" alt="">
+
+                </div>
+                <div class="box">
+                    <img src="images/g-2.jpg" alt="">
+
+                </div>
+                <div class="box">
+                    <img src="images/g-3.jpg" alt="">
+
+                </div>
+                <div class="box">
+                    <img src="images/g-4.jpg" alt="">
+
+                </div>
+                <div class="box">
+                    <img src="images/g-5.jpg" alt="">
+
+                </div>
+                <div class="box">
+                    <img src="images/g-6.jpg" alt="">
+
+                </div>
+                <div class="box">
+                    <img src="images/g-7.jpg" alt="" class="g7">
+
+                </div>
+                <div class="box">
+                    <img src="images/g-8.jpg" alt="">
+
+                </div>
+                <div class="box">
+                    <img src="images/g-9.jpg" alt="" class="g9">
+                    <div class="content">
+                        
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="packages" id="packages">
+
+            <h1 class="heading">
+                <span style="color: brown; position: relative; text-decoration: underline; "><u> Download Hand Gesture Recognition Project Presentation </u></span>
+
+            </h1>
+
+            <div class="box-container">
+
+                <div class="box2">
+                    <div class="content">
+                        <p> You can check the Hand Gesture Recognition Presentation:
+                            <a href="https://docs.google.com/presentation/d/1lmgE51rMsrGoI5VacEQJjMK_-eRkj6cE/edit?usp=sharing&ouid=112035731311661262267&rtpof=true&sd=true"><strong> HGRS Project Presentation </strong></a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="services" id="services">
+
+            <h1 class="heading">
+                <span style="color: brown; position: relative; text-decoration: underline;"> Future Scope </span>
+            </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Hardware Requirements</h3>
+                    <ul>
+                        <li>Arduino UNO</li>
+                        <li>Gesture Sensors</li>
+                        <li>Light with different colours</li> 
+                        <li>Connectors and Flex cables</li>
+                        <li>HC05 Bluetooth sensors</li>
+                        <li>Servo motor</li>
+
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <img src="/Users/pyushgarg/Desktop/hgrs/hgrs project/images/Picture 1.jpg" alt="">
+
+                </div>
+               
+
+            </div>
+        </section>
+        
+        <section class="contact" id="contact">
+            <h1 class="heading">
+                <span style="color: brown; position: relative; text-decoration: underline; ">Contact Us</span>
+            </h1>
+
+            <div class="row">
+                <form action="contact.php" method="post">
+                    <div class="inputBox">
+                        <input type="text" placeholder="name">
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" placeholder="number">
+                        <input type="text" placeholder="subject">
+                    </div>
+                    <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" class="btn" value="send message">
+                </form>
+                
+                <div class="image">
+                   
+                    <img src="images/contact-img.jpg" alt="">
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="brand-container">
+
+            <div class="swiper-container brand-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>About Us</h3>
+                    <p><i>“Gesture recognition is technology that uses sensors to read and interpret hand movements as commands.”.</i><br><br> The essential aim of  building hand gesture recognition system is to create a natural interactionbetween human and computer where the recognized gestures can be used for controlling a robotor  conveying  meaningful  information.</p>
+                </div>
+               
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home">home</a>
+                    <a href="#packages">Informations</a>
+                    <a href="#book">Techniques</a>
+                    <a href="#gallery">Gestures</a>
+                    <a href="#services"> Future Scope</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkedin</a>
+                </div>
+
+            </div>
+
+            <h1 class="credit"> Author by <span> Prateek Garg! Milind udbhav! Robin Kumar!</span> <br> All rights reserved</h1>
+
+        </section>
+
+
+
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
